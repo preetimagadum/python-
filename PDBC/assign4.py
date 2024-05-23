@@ -7,7 +7,7 @@ user_list=resp.json()
 try:
     client=MongoClient('mongodb://localhost:27017/')
     print("MongoDB Connection Successfully!")
-    db=client['10am']
+    db=client['2pm']
     col=db['users']
     col.insert_many(user_list)
     print("Data Inserted Successfully!")

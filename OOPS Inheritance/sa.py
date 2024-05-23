@@ -1,6 +1,6 @@
 from Account import *
 
-class SA:
+class SA(Account):
     min_bal=500
     def __init__(self,id,name,email,address,amount):
         super().__init__(name,email,address)
@@ -12,5 +12,5 @@ class SA:
     
 sa1=SA(101,'Rahul','rahul@gmail.com','delhi',5000)
 sa1.set_mobile(9988776655)
-print(sa1.get_bal())
+print(sa1.get_mobile())
 print(sa1.cal_bal())
